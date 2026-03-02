@@ -1,6 +1,7 @@
 package com.coforge.Day5Prj;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Iterator;
 public class DemoOnLinkedList {
  public static void main(String[] args) {
 	 LinkedList<Integer>llist=new LinkedList<Integer>();
@@ -24,6 +25,13 @@ public class DemoOnLinkedList {
 	 llist1.addFirst(77);
 	 llist1.addLast(45);
 	 System.out.println(llist.equals(llist1));
+	 Iterator<Integer> itr=llist.descendingIterator();
+	 while(itr.hasNext())
+		 System.out.println(itr.next());
+	 //Create employee linked list with 10 records
+	 //sort using Collection.sort on salary based
+	 //sort using comparators, branch, dept,name, salary
+	 //ename,eid, salary,dept, branch
 	
 }
 }

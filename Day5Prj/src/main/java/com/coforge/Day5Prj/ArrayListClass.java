@@ -111,6 +111,11 @@ public class ArrayListClass {
       
       Collections.sort(alist);
       System.out.println(alist);
+     // Object[] obj= alist.toArray();
+      Integer[] irr = alist.toArray(new Integer[0]);
+      System.out.println(irr[2]);
+      Integer[] arr = {34,56,32,43,76,87};
+      List<Integer> list= Arrays.asList(arr);
       
 }
 }
