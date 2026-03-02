@@ -14,13 +14,13 @@ public class Account {
  private String accHolderName;
  private String bankName;
  private double balance;
- public void withDraw(double amount) {
+ public void withDraw(double amount) throws InsufficientFundsException {
 	 if(amount<=this.balance) {
 		 this.balance-=amount;
 		 System.out.println("Withdraw Successful");
 	 }
 	 else {
-		 System.out.println("Insufficient Funds");
+	throw new InsufficientFundsException("Not Successful");
 	 }
  }
  public void deposit(double amount) {
